@@ -76,7 +76,7 @@ static float kAnimationDuration = 0.25;
             return;
         }
         if (_label.textColor.perceivedBrightness > 0.5) {
-            progressIndicator_.appearance = [NSAppearance appearanceNamed:NSAppearanceNameDarkAqua];
+//            progressIndicator_.appearance = [NSAppearance appearanceNamed:NSAppearanceNameDarkAqua];
         } else {
             progressIndicator_.appearance = [NSAppearance appearanceNamed:NSAppearanceNameAqua];
         }

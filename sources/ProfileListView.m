@@ -55,21 +55,21 @@ static NSString *const iTermRegularForegroundColor = @"iTermRegularForegroundCol
 
 - (void)setBackgroundStyle:(NSBackgroundStyle)backgroundStyle {
     if (@available(macOS 10.14, *)) {
-        switch (backgroundStyle) {
-            case NSBackgroundStyleNormal:
-                self.textColor = [NSColor labelColor];
-                [self setAttributedTextColorsForKey:iTermRegularForegroundColor];
-                break;
-            case NSBackgroundStyleEmphasized:
-                [self setAttributedTextColorsForKey:iTermSelectedActiveForegroundColor];
-                self.textColor = [NSColor labelColor];
-                break;
-                
-            case NSBackgroundStyleRaised:
-            case NSBackgroundStyleLowered:
-                DLog(@"Unexpected background style %@", @(backgroundStyle));
-                break;
-        }
+//        switch (backgroundStyle) {
+//            case NSBackgroundStyleNormal:
+//                self.textColor = [NSColor labelColor];
+//                [self setAttributedTextColorsForKey:iTermRegularForegroundColor];
+//                break;
+//            case NSBackgroundStyleEmphasized:
+//                [self setAttributedTextColorsForKey:iTermSelectedActiveForegroundColor];
+//                self.textColor = [NSColor labelColor];
+//                break;
+//                
+//            case NSBackgroundStyleRaised:
+//            case NSBackgroundStyleLowered:
+//                DLog(@"Unexpected background style %@", @(backgroundStyle));
+//                break;
+//        }
         return;
     }
     switch (backgroundStyle) {

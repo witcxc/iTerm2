@@ -363,12 +363,13 @@ CGFloat PerceivedBrightness(CGFloat r, CGFloat g, CGFloat b) {
         });
 
         NSMutableDictionary *dict;
-        NSString *closest = [appearance bestMatchFromAppearancesWithNames:@[ NSAppearanceNameDarkAqua, NSAppearanceNameAqua ]];
-        if ([closest isEqualToString:NSAppearanceNameDarkAqua]) {
-            dict = darkDict;
-        } else {
-            dict = lightDict;
-        }
+//        NSString *closest = [appearance bestMatchFromAppearancesWithNames:@[ NSAppearanceNameDarkAqua, NSAppearanceNameAqua ]];
+//        if ([closest isEqualToString:NSAppearanceNameDarkAqua]) {
+//            dict = darkDict;
+//        } else {
+//            dict = lightDict;
+//        }
+        dict = lightDict;
 
         NSColor *result = dict[self];
         if (result) {

@@ -5423,7 +5423,7 @@ ITERM_WEAKLY_REFERENCEABLE
 
         case TAB_STYLE_DARK:
         case TAB_STYLE_DARK_HIGH_CONTRAST:
-            self.window.appearance = [NSAppearance appearanceNamed:NSAppearanceNameDarkAqua];
+//            self.window.appearance = [NSAppearance appearanceNamed:NSAppearanceNameDarkAqua];
             break;
     }
     // Sigh.

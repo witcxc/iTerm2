@@ -132,9 +132,9 @@
 - (void)drawRect:(NSRect)dirtyRect
 {
     if (@available(macOS 10.14, *)) {
-        [[NSColor controlBackgroundColor] set];
-        NSRectFill(dirtyRect);
-        [[NSColor separatorColor] set];
+//        [[NSColor controlBackgroundColor] set];
+//        NSRectFill(dirtyRect);
+//        [[NSColor separatorColor] set];
     } else {
         [[NSColor whiteColor] set];
         NSRectFill(dirtyRect);

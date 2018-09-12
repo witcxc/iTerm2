@@ -22,24 +22,24 @@
 }
 
 - (iTermPreferencesTabStyle)it_mojaveTabStyle:(iTermPreferencesTabStyle)tabStyle NS_AVAILABLE_MAC(10_14) {
-    NSString *name = [self bestMatchFromAppearancesWithNames:@[ NSAppearanceNameAqua,
-                                                                NSAppearanceNameDarkAqua,
-                                                                NSAppearanceNameAccessibilityHighContrastAqua,
-                                                                NSAppearanceNameAccessibilityHighContrastDarkAqua ] ];
-    if ([name isEqualToString:NSAppearanceNameDarkAqua]) {
-        return TAB_STYLE_DARK;
-    }
-    if ([name isEqualToString:NSAppearanceNameAqua]) {
-        return TAB_STYLE_LIGHT;
-    }
-    if ([name isEqualToString:NSAppearanceNameAccessibilityHighContrastDarkAqua]) {
-        return TAB_STYLE_DARK_HIGH_CONTRAST;
-    }
-    if ([name isEqualToString:NSAppearanceNameAccessibilityHighContrastAqua]) {
-        return TAB_STYLE_LIGHT_HIGH_CONTRAST;
-    }
-    
-    DLog(@"Unexpected tab style %@", @(tabStyle));
+//    NSString *name = [self bestMatchFromAppearancesWithNames:@[ NSAppearanceNameAqua,
+//                                                                NSAppearanceNameDarkAqua,
+//                                                                NSAppearanceNameAccessibilityHighContrastAqua,
+//                                                                NSAppearanceNameAccessibilityHighContrastDarkAqua ] ];
+//    if ([name isEqualToString:NSAppearanceNameDarkAqua]) {
+//        return TAB_STYLE_DARK;
+//    }
+//    if ([name isEqualToString:NSAppearanceNameAqua]) {
+//        return TAB_STYLE_LIGHT;
+//    }
+//    if ([name isEqualToString:NSAppearanceNameAccessibilityHighContrastDarkAqua]) {
+//        return TAB_STYLE_DARK_HIGH_CONTRAST;
+//    }
+//    if ([name isEqualToString:NSAppearanceNameAccessibilityHighContrastAqua]) {
+//        return TAB_STYLE_LIGHT_HIGH_CONTRAST;
+//    }
+//
+//    DLog(@"Unexpected tab style %@", @(tabStyle));
     return TAB_STYLE_LIGHT;
 }
 

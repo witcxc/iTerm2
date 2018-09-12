@@ -217,7 +217,7 @@ static const CGFloat kButtonSize = 17;
 }
 
 - (void)viewDidChangeEffectiveAppearance {
-    [super viewDidChangeEffectiveAppearance];
+//    [super viewDidChangeEffectiveAppearance];
     [self updateTextColor];
 }
 
